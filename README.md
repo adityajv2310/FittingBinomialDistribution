@@ -30,6 +30,7 @@ The following are criteria for a frequency distribution to be a binomial distrib
 Developed by Aditya JV
 Register Number: 212220230002
 
+
 import numpy as np
 import math
 import scipy.stats
@@ -46,7 +47,7 @@ print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
 for x in range(7):
     c=math.factorial(n)/(math.factorial(x)*math.factorial(n-x))
-    Pr.append(c*p*x*q*(n-x))
+    Pr.append(c*p**x*q**(n-x))
     E.append(Pr[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.2f  %4.2f   %3.2f  %3.2f"%(x,Pr[x],f[x],E[x],xi[x]))
@@ -59,11 +60,12 @@ if cal_chi2<tab_chi2:
     print("The given data can be fitted in binomial distribution at 1% LOS")
 else:
     print("The given data cannot be fitted in binomial distribution at 1% LOS")
+
 ```
 
 
 # Output : 
-![Fitting Binomial Distribution - Jupyter Notebook and 1 more page - Personal - Microsoft​ Edge 07-05-2022 11_27_20 (2)](https://user-images.githubusercontent.com/75235386/167241136-ebe3ec8e-bd2d-4338-b418-c0b180c5efae.png)
+![Pqm Exp1](https://user-images.githubusercontent.com/75235386/168961057-2e8227d5-9f85-4ea1-a7c2-c8e981e53eca.png)
 
 # Result :
 Thus, fitting poisson distribution for the given frequencey distribution is verified.
