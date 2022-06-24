@@ -1,4 +1,7 @@
-# Fitting Binomial Distribution
+### EXP NO: 01
+### DATE:
+
+# <p align = "center"> Fitting Binomial Distribution
 
 # Aim : 
 
@@ -26,10 +29,11 @@ The following are criteria for a frequency distribution to be a binomial distrib
 ![image](https://user-images.githubusercontent.com/104613195/166250867-46571ef5-f77b-4658-86ce-1c60c52fdfb1.png)
 
 # Program :
-```python
-# Developed by Aditya JV
+```
+# Developed by: Aditya JV
 # Register Number: 212220230002
-
+```
+```python
 
 import numpy as np
 import math
@@ -61,11 +65,20 @@ if cal_chi2<tab_chi2:
 else:
     print("The given data cannot be fitted in binomial distribution at 1% LOS")
 
+
+    
 ```
 
 
+
+
+
+
 # Output : 
-![Pqm Exp1](https://user-images.githubusercontent.com/75235386/168961057-2e8227d5-9f85-4ea1-a7c2-c8e981e53eca.png)
+![Screenshot 2022-05-18 154652](https://user-images.githubusercontent.com/75235789/168959544-68594e5e-61e1-4f9f-b11f-fa150af44836.png)
 
 # Result :
-Thus, fitting poisson distribution for the given frequencey distribution is verified.
+Thus, the fitting binomial distribution for the given frequencey distribution is implemented.
+
+
+
